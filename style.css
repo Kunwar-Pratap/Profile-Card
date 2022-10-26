@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --card-font: 'Lora', serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #161515ed;
+    line-height: 1.5;
+    font-family: var(--card-font);
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+.profile-dock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    position: relative;
+    background-color: #181c24;
+    color: #e2e4e4;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background-clip: padding-box;
+    padding: 3rem;
+    box-shadow: 9px 9px 50px 9px #333742;
+}
+
+.profile-dock::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -3px;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 12px;
+    background-image: linear-gradient(145deg, rgb(141, 56, 148), #734a58 20%, #4ac1c1 200%, rgb(141, 56, 148) 100%);
+    z-index: -1;
+}
+
+.profile-dock a {
+    text-decoration: none;
+}
+
+.profile-img {
+    overflow: hidden;
+    position: relative;
+    height: 130px;
+    width: 130px;
+}
+
+.profile-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-name {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.profile-name-handler {
+    color: #f4b3ef;
+}
+
+.profile-name-handler:hover {
+    color: #b9fbc0;
+}
+
+.profile-acts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+
+}
+
+.profile-acts>* {
+    margin: 0 0.26rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 45px;
+    line-height: 1;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    transition: 0.20s ease;
+}
+
+.btn-acts {
+    background-color: #fc7c8e;
+    border-radius: 99rem;
+    padding: 0 1rem;
+    color: rgb(14, 14, 14);
+    background-image: linear-gradient(145deg, #b9375e, #b8b2fb);
+}
+
+.btn-acts:hover,
+.btn-acts:focus {
+    background-size: 200%;
+}
+
+.btn-icon {
+    color: #b2b6c2;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #333742;
+    border-radius: 50%;
+}
+
+.btn-icon i {
+    font-size: 1.20rem;
+}
+
+.btn-icon:hover,
+.btn-icon:focus {
+    border-color: #b2b6c2;
+}
+
+.profile-links {
+    margin-top: 3.1rem;
+
+}
+
+.link {
+    color: #b2b6c2;
+    text-decoration: none;
+    margin-right: 0.377rem;
+    margin-left: 0.377rem;
+}
+
+.link-icon i {
+    font-size: 1.20rem;
+}
+
+.link-icon {
+    color: #b2b6c2;
+}
+
+.insta-icon:hover,
+.insta-icon:focus {
+    color: #C13584;
+}
+
+.fb-icon:hover,
+.fb-icon:focus {
+    color: #1877F2;
+}
+
+.twitter-icon:hover,
+.twitter-icon:focus {
+    color: #1DA1F2;
+}
